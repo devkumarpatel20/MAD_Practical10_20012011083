@@ -11,28 +11,7 @@ class Person (jsonObject: JSONObject) :Serializable {
     var Address: String
     var Latitude: Double
     var Longitude:Double
-    /**
-     * {
-    "id": "62fc930c5831f21801d78da8",
-    "email": "guerra_rodgers@gnu.ac.in",
-    "phone": "+919289635723",
-    "profile": {
-    "name": "Guerra Rodgers",
-    "address": "88 College Place, Umapine, Oregon",
-    "location": {
-    "lat": 35.924816,
-    "long": -85.003777
-    }
-    }
-    }
-     */
-    /*
-    * [
-    * {"_id":"5f8d677c68d8ae7ceab6a732",
-    * "name":{"first":"Lloyd","last":"York"},
-    * "email":"lloyd.york@undefined.net",
-    * "phone":"+1 (817) 545-3660",
-    * "address":"311 Livonia Avenue, Belva, Ohio, 6019"}*/
+
     init {
         id = jsonObject.getString("id")
         EmailId = jsonObject.getString("email")
